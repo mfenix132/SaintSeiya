@@ -6,8 +6,8 @@
 }
 
 body {
-    background: #ff0000c2;
-    background: linear-gradient(to right, #d4d3dd, #ff0000c2);
+    background: #00398fa8;
+    background: radial-gradient(#011e49a8, #000000);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,11 +17,13 @@ body {
 }
 
 .ss-banner {
-    width: 100%;
+    width: 100%;      
 }
 
 h1 {
     letter-spacing: 3px;
+    color: rgb(0, 238, 255);
+
 }
 
 .bronze-saints,
@@ -32,6 +34,8 @@ h1 {
     justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
+    padding: 20px 20px;
+
 }
 
 .bronze-saint,
@@ -40,11 +44,47 @@ h1 {
     border-radius: 20px;
     box-shadow: 0 3px 15px rgba(100, 100, 100, .5);
     margin: 10px;
-    padding: 20px;
+    padding: 20px 20px;
     text-align: center;
+    transition: 400ms;
 }
+
+p {
+    display: none;
+}
+
+.bronze-saint:hover p,
+.gold-saint:hover p {
+    display: flex;
+    max-width: 250px;
+    text-align: left;
+    font-size: 12px;
+    color:rgba(39, 39, 39, 0.808);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bronze-saint:hover {
+    transform: scale(1.25, 1.25);
+    cursor: pointer;
+}
+
+.gold-saint:hover {
+    transform: scale(1.25, 1.25);
+    cursor: pointer;
+}
+
+
 
 .img-container img {
     height: 300px;
     width: 200px;
+}
+
+.fa-solid.i-red {
+    color:rgb(255, 0, 0);
+    padding-right: 5px;
+}
+
+.fa-solid.i-blue {
+    color:blue;
 }
