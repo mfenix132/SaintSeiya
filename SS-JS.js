@@ -8,6 +8,7 @@ const bronzeSaints = [
     constellation: "Phoenix",
     imgLink: "./IMGs/phoenix.webp",
     info: "Ikki\" can be translated to as \"A Singular Point of Brilliance\", which denotes the character's lone wolf attitude as well as his above-average, fiery power."
+
   },
   {
     name: "Seiya",
@@ -19,13 +20,13 @@ const bronzeSaints = [
     name: "Shiryu",
     constellation: "Dragon",
     imgLink: "./IMGs/dragon.webp",
-    info: "Shiryu is considered the most mature of the five heroes, and thus the wisest. As the Bronze Saint of the Dragon constellation, Shiryu dons the emerald Dragon Bronze Cloth, a jewel among the Clothes due to its legendary defense properties."
+    info: "Shiryu is considered the most mature of the five heroes, and thus the wisest. As the Bronze Saint of the Dragon constellation, Shiryu dons the emerald Dragon Bronze Cloth."
   },
   {
     name: "Hyoga",
     constellation: "Cygnus",
     imgLink: "./IMGs/hyoga.webp",
-    info: "Hyoga was trained by Aquarius Camus, and with him he learned to manipulate the ice. Following his master's teachings, he tries to remain rational in the face of everything, but he has an emotional side that he can\'t let go of."
+    info: "Hyoga was trained by Aquarius Camus. He tries to remain rational in the face of everything, but he has an emotional side that he can\'t let go of."
   },
   {
     name: "Shun",
@@ -37,7 +38,7 @@ const bronzeSaints = [
     name: "Geki",
     constellation: "Bear",
     imgLink: "./IMGs/bear_geki.webp",
-    info: "Geki was an orphan that got into the care of the Graad Foundation along with 99 others, owned by Japanese Mitsumasa Kido. Unknown to the boy, Mitsumasa was actually his and the other 99 children's father."
+    info: "Geki was an orphan that got into the care of the Graad Foundation along with 99 others, owned by Japanese Mitsumasa Kido. Mitsumasa was actually his father."
   },
   {
     name: "Ban",
@@ -49,7 +50,7 @@ const bronzeSaints = [
     name: "Jabu",
     constellation: "Unicorn",
     imgLink: "./IMGs/unicorn_jabu.webp",
-    info: "Jabu is one of the 100 orphans that were sent by Mitsumasa Kido all over the world to train and bring back the Saints Cloths in order to protect his foster granddaughter, Saori Kido (Athena)."
+    info: "Jabu is one of the 100 orphans that were sent by Mitsumasa Kido all over the world to train and bring back the Saints Cloths in order to protect his foster granddaughter."
   },
 ];
 
@@ -143,7 +144,7 @@ bronzeSaints.forEach((bSaint) => {
   let bronzeEl = document.createElement("div");
   bronzeEl.classList.add("bronze-saint");
 
-  let bronzeInnerHTML = `
+  let bronzeInnerHTML = `    
       <div class="img-container">
           <img src="${bSaint.imgLink}" alt="${bSaint.name} />
       </div>
@@ -152,6 +153,7 @@ bronzeSaints.forEach((bSaint) => {
           <h3 class="name"><i class="fa-solid i-blue fa-user"></i> ${bSaint.name}</h3>
           <p>${bSaint.info}</p>                  
       </div>
+    </div>
       `;
 
   bronzeEl.innerHTML = bronzeInnerHTML;
@@ -179,3 +181,6 @@ goldSaints.forEach((gSaint) => {
   goldEl.innerHTML = goldInnerHTML;
   goldChars.appendChild(goldEl);
 });
+
+
+// JQuery -------------------------------------------------------------------------------------------------!
