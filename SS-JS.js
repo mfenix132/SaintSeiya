@@ -7,8 +7,7 @@ const bronzeSaints = [
     name: "Ikki",
     constellation: "Phoenix",
     imgLink: "./IMGs/phoenix.png",
-    info: "Ikki\" can be translated to as \"A Singular Point of Brilliance\", which denotes the character's lone wolf attitude as well as his above-average, fiery power."
-
+    info: "\"Ikki\" can be translated as \"A Single Point of Brilliance\", which denotes the character's lone wolf attitude as well as his above-average, fiery power."
   },
   {
     name: "Seiya",
@@ -20,25 +19,25 @@ const bronzeSaints = [
     name: "Shiryu",
     constellation: "Dragon",
     imgLink: "./IMGs/dragon.webp",
-    info: "Shiryu is considered the most mature of the five heroes, and thus the wisest. As the Bronze Saint of the Dragon constellation, Shiryu dons the emerald Dragon Bronze Cloth."
+    info: "As the Bronze Saint of the Dragon constellation, Shiryu dons the emerald Dragon Bronze Cloth."
   },
   {
     name: "Hyoga",
     constellation: "Cygnus",
     imgLink: "./IMGs/hyoga.png",
-    info: "Hyoga was trained by Aquarius Camus, and with him he learned to manipulate the ice. Following his master's teachings, he tries to remain rational in the face of everything, but he has an emotional side that he can\'t let go of."
+    info: "Hyoga was trained by Aquarius Camus. He tries to remain rational in the face of everything, but he has an emotional side that he can\'t let go of."
   },
   {
     name: "Shun",
     constellation: "Andromeda",
     imgLink: "./IMGs/shun.png",
-    info: "Shun is arguably one of the strongest in the series, although his gentle disposition and kind nature tend to prevent him from using his true power, unless he is forced to do so."
+    info: "Shun's gentle disposition and kind nature tend to prevent him from using his true power, unless he is forced to do so."
   },
   {
     name: "Geki",
     constellation: "Bear",
     imgLink: "./IMGs/bear_geki.png",
-    info: "Geki was an orphan that got into the care of the Graad Foundation along with 99 others, owned by Japanese Mitsumasa Kido. Unknown to the boy, Mitsumasa was actually his and the other 99 children's father."
+    info: "Geki was an orphan that got into the care of the Graad Foundation along with 99 others, owned by Japanese Mitsumasa Kido."
   },
   {
     name: "Ban",
@@ -50,7 +49,7 @@ const bronzeSaints = [
     name: "Jabu",
     constellation: "Unicorn",
     imgLink: "./IMGs/unicorn_jabu.png",
-    info: "Jabu is one of the 100 orphans that were sent by Mitsumasa Kido all over the world to train and bring back the Saints Cloths in order to protect his foster granddaughter, Saori Kido (Athena)."
+    info: "Jabu is one of the 100 orphans that were sent by Mitsumasa Kido all over the world to train and bring back the Saints Cloths to protect his granddaughter."
   },
 ];
 
@@ -116,7 +115,7 @@ const goldSaints = [
     name: "Camus",
     constellation: "Aquarius",
     imgLink: "./IMGs/camus.png",
-    info: "Camus is the Golden Knight of Aquarius, known as the \"Mage of water and ice\". He trained little Hyoga for six years in the icy lands of eastern Siberia, and was forced to fight against Hyoga at the battle of 12 houses."
+    info: "Camus is the Golden Knight of Aquarius, known as the \"Mage of water and ice\". He trained little Hyoga for six years in Siberia, and was forced to fight against him in the battle of 12 houses."
   },
   {
     name: "Aphrodite",
@@ -128,7 +127,7 @@ const goldSaints = [
     name: "Shaka",
     constellation: "Virgo",
     imgLink: "./IMGs/shaka.png",
-    info: "Shaka is a Gold Saint of the constellation Virgo, the most serene and one of the strongest. Shaka alone of all saints occupies the rarefied spot between God and man, but living between two worlds has its blessings as well as curses."
+    info: "Shaka is a Gold Saint of the constellation Virgo, one of the strongest. Shaka alone of all saints is closest to a God, but living between two worlds has its blessings as well as curses."
   },
 ];
 
@@ -151,7 +150,7 @@ bronzeSaints.forEach((bSaint) => {
       <div class="info">
           <h3 class="constellation"><i class="fa-solid i-red fa-bahai"></i> ${bSaint.constellation}</h3>
           <h3 class="name"><i class="fa-solid i-blue fa-user"></i> ${bSaint.name}</h3>
-          <p>${bSaint.info}</p>                  
+          <small>${bSaint.info}</small>                  
       </div>
     </div>
       `;
@@ -174,13 +173,10 @@ goldSaints.forEach((gSaint) => {
       <div class="info">
           <h3 class="constellation"><i class="fa-solid i-red fa-bahai"></i> ${gSaint.constellation}</h3>
           <h3 class="name"><i class="fa-solid i-blue fa-user"></i> ${gSaint.name}</h3>
-          <p>${gSaint.info}</p>          
+          <small>${gSaint.info}</small>          
       </div>
       `;
 
   goldEl.innerHTML = goldInnerHTML;
   goldChars.appendChild(goldEl);
 });
-
-
-// JQuery -------------------------------------------------------------------------------------------------!

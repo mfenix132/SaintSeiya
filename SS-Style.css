@@ -50,22 +50,18 @@ h1 {
     transition: ease-in-out 700ms;
 }
 
-p {
-    display: none;
-}
-
-.bronze-saint:hover p,
-.gold-saint:hover p {
+ small {
     display: flex;
+    letter-spacing: -1px;
     max-width: 250px;
     text-align: left;
-    font-size: 12px;
     color:rgba(39, 39, 39, 0.808);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
+
 .bronze-saint:hover {
-    transform: scale(1.10, 1.10);
+    transform: scale(1.25, 1.25);
     cursor: pointer;
 }
 
