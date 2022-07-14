@@ -34,7 +34,7 @@ h1 {
     align-items: space-between;
     justify-content: center;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 85%;
     padding: 20px 20px;
 
 }
@@ -52,7 +52,7 @@ h1 {
 
  small {
     display: flex;
-    letter-spacing: -1px;
+    letter-spacing: -.75px;
     max-width: 250px;
     text-align: left;
     color:rgba(39, 39, 39, 0.808);
