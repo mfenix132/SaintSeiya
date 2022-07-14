@@ -22,7 +22,7 @@ body {
 
 h1 {
     letter-spacing: 3px;
-    color: rgb(0, 238, 255);
+    color: #eee;
 
 }
 
@@ -46,7 +46,7 @@ h1 {
     margin: 10px;
     padding: 20px 20px;
     text-align: center;
-    transition: 400ms;
+    transition: ease-in-out 700ms;
 }
 
 p {
@@ -64,20 +64,19 @@ p {
 }
 
 .bronze-saint:hover {
-    transform: scale(1.25, 1.25);
+    transform: scale(1.10, 1.10);
     cursor: pointer;
 }
 
 .gold-saint:hover {
     transform: scale(1.25, 1.25);
     cursor: pointer;
-}
-
-
+} 
 
 .img-container img {
     height: 300px;
     width: 200px;
+    cursor: pointer;
 }
 
 .fa-solid.i-red {
